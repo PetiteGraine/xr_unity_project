@@ -4,11 +4,8 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Liquid
-  - Solid
-  - Glass
-  - Dryer
-  - Cleaner
+  - ZoneSecurite
+  - Bidon
   layers:
   - Default
   - TransparentFX
