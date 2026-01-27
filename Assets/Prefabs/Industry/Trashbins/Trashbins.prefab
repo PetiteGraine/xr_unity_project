@@ -30056,7 +30056,8 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 65d0a80b39fa2ef498a2f6cef5b9063b, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 741036993980632412, guid: 0c7a47af27ae5024c859dd29b4bc4336, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 2044999664541311022, guid: 0c7a47af27ae5024c859dd29b4bc4336, type: 3}
@@ -30090,6 +30091,7 @@ MonoBehaviour:
   _trashType: 2
   _greenEffect: {fileID: 8206982929807075718}
   _redEffect: {fileID: 5047204853653027164}
+  GameManager: {fileID: 0}
 --- !u!4 &6537612818527674790 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2044999664541311022, guid: 0c7a47af27ae5024c859dd29b4bc4336, type: 3}
@@ -30155,7 +30157,8 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: a8c5e05cc72f1834bb5733c87bd68629, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 128939994660567454, guid: adac1d5b9a8966d43a5b9ca362117117, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 1710330030388152832, guid: adac1d5b9a8966d43a5b9ca362117117, type: 3}
@@ -30189,6 +30192,7 @@ MonoBehaviour:
   _trashType: 0
   _greenEffect: {fileID: 5604163978128531146}
   _redEffect: {fileID: 5090191592578778239}
+  GameManager: {fileID: 0}
 --- !u!4 &4660710382903125400 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1710330030388152832, guid: adac1d5b9a8966d43a5b9ca362117117, type: 3}
@@ -30254,7 +30258,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 785289761589902525, guid: 582a11a306c425a4895f6f97a4164f58, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 7978197988556143280, guid: 582a11a306c425a4895f6f97a4164f58, type: 3}
@@ -30293,3 +30298,4 @@ MonoBehaviour:
   _trashType: 1
   _greenEffect: {fileID: 2954235159488271579}
   _redEffect: {fileID: 3168703861079024978}
+  GameManager: {fileID: 0}
