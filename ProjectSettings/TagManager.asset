@@ -7,6 +7,8 @@ TagManager:
   - Liquid
   - Solid
   - Glass
+  - Dryer
+  - Cleaner
   layers:
   - Default
   - TransparentFX
