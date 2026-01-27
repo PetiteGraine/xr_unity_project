@@ -7,7 +7,7 @@ public enum ChemicalType
     Bottle,
     Exclam,
     Explos,
-    Flamm,
+    Flamme,
     Pollu,
     RondFlamm,
     Silhouette,

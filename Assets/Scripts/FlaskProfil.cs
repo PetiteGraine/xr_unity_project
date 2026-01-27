@@ -8,4 +8,5 @@ public struct FlaskProfil
     public ChemicalType type;     // L'enum (Identité logique)
     public Sprite picto;          // L'image (Identité visuelle)
     public Color liquidColor;     // (Optionnel) La couleur du liquide associée
+    public ChemicalIdentity chemicalIdentity; 
 }
