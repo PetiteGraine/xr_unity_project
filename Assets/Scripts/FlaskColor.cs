@@ -6,7 +6,7 @@ public class FlaskColor : MonoBehaviour
     [SerializeField] private MeshRenderer targetMeshRenderer; 
 
     // Le nom exact de la propriété couleur dans ton Shader (souvent "_BaseColor" en URP)
-    private string colorProperty = "_BaseColor"; 
+    private string colorProperty = "_Color1"; 
 
     public void SetColor(Color newColor)
     {
