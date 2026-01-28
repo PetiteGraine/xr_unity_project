@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void WinGame()
+    public void WinGame()
     {
         if (endScreenUI != null)
         {

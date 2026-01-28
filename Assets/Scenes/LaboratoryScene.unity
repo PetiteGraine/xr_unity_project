@@ -2772,6 +2772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anglePourVerser: 45
+  nbrFiolesVersees: 0
   estAuDessusBac: 0
   estProcheBidon: 0
 --- !u!114 &121784517

@@ -46,7 +46,7 @@ public class FlaskManager : MonoBehaviour
     }
 
     // --- NOUVELLE FONCTION ---
-    [ContextMenu("TEST : Vider la Fiole")] // <--- AJOUTEZ CETTE LIGNE
+    [ContextMenu("TEST : Vider la Fiole")]
     public void EmptyFlask()
     {
         if (isEmpty) return; // On ne vide pas deux fois
@@ -54,6 +54,7 @@ public class FlaskManager : MonoBehaviour
         // On change le material de l'enfant (le liquide) pour qu'il devienne transparent
         if (liquidRenderer != null && emptyLiquidMaterial != null)
         {
+
             liquidRenderer.material = emptyLiquidMaterial;
         }
 

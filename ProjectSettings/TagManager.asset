@@ -6,6 +6,11 @@ TagManager:
   tags:
   - ZoneSecurite
   - Bidon
+  - Solid
+  - Liquid
+  - Glass
+  - Cleaner
+  - Dryer
   layers:
   - Default
   - TransparentFX

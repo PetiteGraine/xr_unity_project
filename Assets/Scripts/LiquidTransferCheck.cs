@@ -7,6 +7,7 @@ public class LiquidTransferCheck : MonoBehaviour
 
     // Référence au manager pour pouvoir vider la fiole
     private FlaskManager myManager;
+    public int nbrFiolesVersees = 0;
 
     [SerializeField] private bool estAuDessusBac = false;
     [SerializeField] private bool estProcheBidon = false;
@@ -22,28 +23,30 @@ public class LiquidTransferCheck : MonoBehaviour
     {
         float angleActuel = Vector3.Angle(transform.up, Vector3.up);
         bool estEnTrainDeVerser = angleActuel > anglePourVerser;
+        
 
         // Si on verse dans le bidon
         if (estEnTrainDeVerser && estProcheBidon)
         {
             // 1. DANS TOUS LES CAS : On vide visuellement la fiole
-            // Car physiquement, le liquide coule, même si c'est une erreur.
             VerserLiquide();
-
             // 2. Ensuite, on juge si c'est bien ou mal pour le score/feedback
             if (estAuDessusBac)
             {
                 Debug.Log("Transfert OK (Sécurisé)");
+                GameManager.Instance.AddPoint();
             }
             else
             {
                 EnregistrerFaute("Transfert hors zone de rétention !");
             }
-        }
-        else if (estEnTrainDeVerser && !estProcheBidon)
-        {
-             // Optionnel : Vous pouvez aussi vider la fiole ici si on verse par terre
-        }
+            nbrFiolesVersees++;
+            if (nbrFiolesVersees >= GameManager.Instance.scoreToWin)
+            {
+                // Toutes les fioles ont été versées, on peut désactiver ce script
+                GameManager.Instance.WinGame();
+            } 
+        }         
     }
 
     // ... (Gardez vos fonctions OnTriggerEnter et OnTriggerExit telles quelles) ...
@@ -73,6 +76,7 @@ public class LiquidTransferCheck : MonoBehaviour
         // On appelle le manager pour rendre le liquide transparent
         if (myManager != null)
         {
+            
             myManager.EmptyFlask();
         }
     }
